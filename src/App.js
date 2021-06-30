@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { useState } from 'react';
+import Grid from './components/Grid'
+
+
+
+
 
 function App() {
+  const [flag,setFlag] = useState(false)
+ // const [gifs, setGifs] = useState([])
+ 
+    
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="layout">
+      <header className="header size-full">Giphy random gif generator</header>
+      <button onClick={(e)=>setFlag(!flag)}>Click here to generate Random Gifs </button>
+       <Grid flag={flag} />
+
+       <footer className="size-full footer">Copyright: alexcoronel1995@gmail.com</footer>
     </div>
   );
 }
