@@ -14,10 +14,12 @@ This simple web app generate random 10 gifs using the Ghipy API.
    1. ![API KEY](./images/apikey.png)
 
 4. Install the dependencies
-   1. `yarn install`
+   1. using yarn:`yarn install`
+   2. using npm: `npm install`
 
 5. start the dev server 
-   1. `yarn start`
+   1. using yarn: `yarn start`
+   2. using npm: `npm start`
 
 6. visit [http:localhost:3000](http:localhost:3000/)
 
